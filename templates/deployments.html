@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="panel">
+  <h2>Deployment History</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th><th>Version</th><th>Commit ID</th><th>Status</th><th>Developer</th><th>Commit Time</th><th>Deployment Time</th><th>Notes</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for deployment in deployments %}
+      <tr>
+        <td>{{ deployment.id }}</td>
+        <td>{{ deployment.version }}</td>
+        <td>{{ deployment.commit_id }}</td>
+        <td><span class="pill {{ deployment.status }}">{{ deployment.status }}</span></td>
+        <td>{{ deployment.developer }}</td>
+        <td>{{ deployment.commit_timestamp }}</td>
+        <td>{{ deployment.deployment_timestamp }}</td>
+        <td>{{ deployment.notes }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+{% endblock %}

@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "version": "v1.0.0",
+    "commit_id": "a13f9d2",
+    "commit_timestamp": "2026-03-02T08:30:00+00:00",
+    "deployment_timestamp": "2026-03-02T13:00:00+00:00",
+    "status": "success",
+    "environment": "production",
+    "developer": "A. Kim",
+    "notes": "Initial telemetry service rollout."
+  },
+  {
+    "id": 2,
+    "version": "v1.1.0",
+    "commit_id": "b27ce81",
+    "commit_timestamp": "2026-03-05T07:10:00+00:00",
+    "deployment_timestamp": "2026-03-05T10:40:00+00:00",
+    "status": "success",
+    "environment": "production",
+    "developer": "T. Patel",
+    "notes": "Improved mission event logging."
+  },
+  {
+    "id": 3,
+    "version": "v1.2.0",
+    "commit_id": "c30bd44",
+    "commit_timestamp": "2026-03-08T06:50:00+00:00",
+    "deployment_timestamp": "2026-03-08T11:20:00+00:00",
+    "status": "failed",
+    "environment": "production",
+    "developer": "M. Rivera",
+    "notes": "Navigation API regression detected."
+  },
+  {
+    "id": 4,
+    "version": "v1.2.1",
+    "commit_id": "d45aa71",
+    "commit_timestamp": "2026-03-09T08:00:00+00:00",
+    "deployment_timestamp": "2026-03-09T12:15:00+00:00",
+    "status": "success",
+    "environment": "production",
+    "developer": "M. Rivera",
+    "notes": "Hotfix for navigation API."
+  },
+  {
+    "id": 5,
+    "version": "v1.3.0",
+    "commit_id": "e51fd03",
+    "commit_timestamp": "2026-03-14T09:05:00+00:00",
+    "deployment_timestamp": "2026-03-14T14:55:00+00:00",
+    "status": "success",
+    "environment": "production",
+    "developer": "J. Wong",
+    "notes": "Battery diagnostics improvements."
+  },
+  {
+    "id": 6,
+    "version": "v1.4.0",
+    "commit_id": "f67db18",
+    "commit_timestamp": "2026-03-18T10:40:00+00:00",
+    "deployment_timestamp": "2026-03-18T16:10:00+00:00",
+    "status": "failed",
+    "environment": "production",
+    "developer": "L. Brown",
+    "notes": "Message queue timeout under load."
+  },
+  {
+    "id": 7,
+    "version": "v1.4.1",
+    "commit_id": "g72ce90",
+    "commit_timestamp": "2026-03-19T07:25:00+00:00",
+    "deployment_timestamp": "2026-03-19T10:30:00+00:00",
+    "status": "success",
+    "environment": "production",
+    "developer": "L. Brown",
+    "notes": "Queue retry policy hotfix."
+  },
+  {
+    "id": 8,
+    "version": "v1.5.0",
+    "commit_id": "h83aa55",
+    "commit_timestamp": "2026-03-24T06:10:00+00:00",
+    "deployment_timestamp": "2026-03-24T12:45:00+00:00",
+    "status": "success",
+    "environment": "production",
+    "developer": "A. Kim",
+    "notes": "UI enhancements for operator panel."
+  },
+  {
+    "id": 9,
+    "version": "v1.6.0",
+    "commit_id": "i99fa42",
+    "commit_timestamp": "2026-03-28T08:35:00+00:00",
+    "deployment_timestamp": "2026-03-28T15:05:00+00:00",
+    "status": "success",
+    "environment": "production",
+    "developer": "T. Patel",
+    "notes": "Extended mission reporting export."
+  },
+  {
+    "id": 10,
+    "version": "v1.7.0",
+    "commit_id": "j10de77",
+    "commit_timestamp": "2026-04-02T09:20:00+00:00",
+    "deployment_timestamp": "2026-04-02T13:50:00+00:00",
+    "status": "success",
+    "environment": "production",
+    "developer": "J. Wong",
+    "notes": "Security patch and dependency updates."
+  },
+  {
+    "id": 11,
+    "version": "v1.8.0",
+    "commit_id": "k11ab02",
+    "commit_timestamp": "2026-04-07T05:45:00+00:00",
+    "deployment_timestamp": "2026-04-07T10:00:00+00:00",
+    "status": "success",
+    "environment": "production",
+    "developer": "A. Kim",
+    "notes": "Autonomous route optimizer tweaks."
+  },
+  {
+    "id": 12,
+    "version": "v1.9.0",
+    "commit_id": "l12bc88",
+    "commit_timestamp": "2026-04-12T07:05:00+00:00",
+    "deployment_timestamp": "2026-04-12T12:20:00+00:00",
+    "status": "success",
+    "environment": "production",
+    "developer": "M. Rivera",
+    "notes": "Performance tuning for rover command bus."
+  }
+]
