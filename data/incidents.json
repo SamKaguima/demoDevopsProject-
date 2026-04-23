@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "deployment_id": 3,
+    "start_timestamp": "2026-03-08T11:30:00+00:00",
+    "resolved_timestamp": "2026-03-08T12:35:00+00:00",
+    "duration_minutes": 65,
+    "severity": "high",
+    "summary": "Navigation API returned invalid waypoints.",
+    "status": "resolved"
+  },
+  {
+    "id": 2,
+    "deployment_id": 6,
+    "start_timestamp": "2026-03-18T16:20:00+00:00",
+    "resolved_timestamp": "2026-03-18T17:10:00+00:00",
+    "duration_minutes": 50,
+    "severity": "medium",
+    "summary": "Queue timeout caused delayed telemetry updates.",
+    "status": "resolved"
+  },
+  {
+    "id": 3,
+    "deployment_id": 6,
+    "start_timestamp": "2026-03-18T18:00:00+00:00",
+    "resolved_timestamp": "2026-03-18T18:30:00+00:00",
+    "duration_minutes": 30,
+    "severity": "low",
+    "summary": "Intermittent API latency after rollback.",
+    "status": "resolved"
+  }
+]

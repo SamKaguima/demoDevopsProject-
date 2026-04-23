@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="actions">
+  <form method="post" action="{{ url_for('add_successful_deployment') }}">
+    <button type="submit" class="btn success">Add Successful Deployment</button>
+  </form>
+  <form method="post" action="{{ url_for('simulate_failure') }}">
+    <button type="submit" class="btn danger">Simulate Failure</button>
+  </form>
+  <form method="post" action="{{ url_for('recover_system') }}">
+    <button type="submit" class="btn">Recover System</button>
+  </form>
+</section>
+
+<section class="cards">
+  <article class="card"><h3>Total Deployments</h3><p>{{ metrics.total_deployments }}</p></article>
+  <article class="card"><h3>Successful Deployments</h3><p>{{ metrics.successful_deployments }}</p></article>
+  <article class="card"><h3>Failed Deployments</h3><p>{{ metrics.failed_deployments }}</p></article>
+  <article class="card"><h3>Deployment Frequency</h3><p>{{ metrics.deployment_frequency_per_week }} / week</p></article>
+  <article class="card"><h3>Lead Time for Changes</h3><p>{{ metrics.avg_lead_time_hours }} hours</p></article>
+  <article class="card"><h3>Change Failure Rate</h3><p>{{ metrics.change_failure_rate }}%</p></article>
+  <article class="card"><h3>Average MTTR</h3><p>{{ metrics.avg_mttr_minutes }} min</p></article>
+</section>
+
+<section class="panel">
+  <h2>Recent Deployments</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th><th>Version</th><th>Status</th><th>Environment</th><th>Developer</th><th>Deployed At</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for deployment in recent_deployments %}
+      <tr>
+        <td>{{ deployment.id }}</td>
+        <td>{{ deployment.version }}</td>
+        <td><span class="pill {{ deployment.status }}">{{ deployment.status }}</span></td>
+        <td>{{ deployment.environment }}</td>
+        <td>{{ deployment.developer }}</td>
+        <td>{{ deployment.deployment_timestamp }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+
+<section class="panel">
+  <h2>Recent Incidents</h2>
+  {% if active_incidents %}
+    <p class="active-note">Active incidents: {{ active_incidents|length }}</p>
+  {% endif %}
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th><th>Deployment</th><th>Severity</th><th>Status</th><th>Duration (min)</th><th>Summary</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for incident in recent_incidents %}
+      <tr>
+        <td>{{ incident.id }}</td>
+        <td>#{{ incident.deployment_id }}</td>
+        <td>{{ incident.severity }}</td>
+        <td><span class="pill {{ incident.status }}">{{ incident.status }}</span></td>
+        <td>{{ incident.duration_minutes if incident.duration_minutes is not none else '-' }}</td>
+        <td>{{ incident.summary }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+
+<section class="panel">
+  <h2>What the 4 DORA Metrics Mean</h2>
+  <ul>
+    <li><strong>Deployment Frequency:</strong> How often the team ships changes to production.</li>
+    <li><strong>Lead Time for Changes:</strong> How long code takes to go from commit to production.</li>
+    <li><strong>Change Failure Rate:</strong> The percentage of deployments that cause failures.</li>
+    <li><strong>MTTR:</strong> The average time needed to recover from an incident.</li>
+  </ul>
+</section>
+{% endblock %}

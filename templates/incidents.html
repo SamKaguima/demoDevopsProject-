@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="panel">
+  <h2>Incident History</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th><th>Deployment ID</th><th>Severity</th><th>Status</th><th>Started</th><th>Resolved</th><th>Duration (min)</th><th>Summary</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for incident in incidents %}
+      <tr>
+        <td>{{ incident.id }}</td>
+        <td>#{{ incident.deployment_id }}</td>
+        <td>{{ incident.severity }}</td>
+        <td><span class="pill {{ incident.status }}">{{ incident.status }}</span></td>
+        <td>{{ incident.start_timestamp }}</td>
+        <td>{{ incident.resolved_timestamp if incident.resolved_timestamp else '-' }}</td>
+        <td>{{ incident.duration_minutes if incident.duration_minutes is not none else '-' }}</td>
+        <td>{{ incident.summary }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+{% endblock %}
