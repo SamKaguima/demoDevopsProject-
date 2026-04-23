@@ -28,5 +28,45 @@
     "severity": "low",
     "summary": "Intermittent API latency after rollback.",
     "status": "resolved"
+  },
+  {
+    "id": 4,
+    "deployment_id": 13,
+    "start_timestamp": "2026-04-23T15:02:45+00:00",
+    "resolved_timestamp": "2026-04-23T15:03:15+00:00",
+    "duration_minutes": 1,
+    "severity": "high",
+    "summary": "Simulated service disruption after failed release.",
+    "status": "resolved"
+  },
+  {
+    "id": 5,
+    "deployment_id": 16,
+    "start_timestamp": "2026-04-23T15:04:52+00:00",
+    "resolved_timestamp": "2026-04-23T15:04:54+00:00",
+    "duration_minutes": 1,
+    "severity": "high",
+    "summary": "Simulated service disruption after failed release.",
+    "status": "resolved"
+  },
+  {
+    "id": 6,
+    "deployment_id": 17,
+    "start_timestamp": "2026-04-23T15:05:12+00:00",
+    "resolved_timestamp": "2026-04-23T15:05:16+00:00",
+    "duration_minutes": 1,
+    "severity": "high",
+    "summary": "Simulated service disruption after failed release.",
+    "status": "resolved"
+  },
+  {
+    "id": 7,
+    "deployment_id": 18,
+    "start_timestamp": "2026-04-23T15:05:26+00:00",
+    "resolved_timestamp": "2026-04-23T15:05:27+00:00",
+    "duration_minutes": 1,
+    "severity": "high",
+    "summary": "Simulated service disruption after failed release.",
+    "status": "resolved"
   }
 ]

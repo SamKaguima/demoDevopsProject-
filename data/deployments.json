@@ -130,5 +130,115 @@
     "environment": "production",
     "developer": "M. Rivera",
     "notes": "Performance tuning for rover command bus."
+  },
+  {
+    "id": 13,
+    "version": "v1.13.0",
+    "commit_id": "sim0013",
+    "commit_timestamp": "2026-04-23T15:02:45+00:00",
+    "deployment_timestamp": "2026-04-23T15:02:45+00:00",
+    "status": "failed",
+    "environment": "production",
+    "developer": "Simulation Bot",
+    "notes": "Simulated failed deployment for presentation."
+  },
+  {
+    "id": 14,
+    "version": "v1.14.0",
+    "commit_id": "succ0014",
+    "commit_timestamp": "2026-04-23T09:04:34+00:00",
+    "deployment_timestamp": "2026-04-23T15:04:34+00:00",
+    "status": "success",
+    "environment": "production",
+    "developer": "Release Bot",
+    "notes": "Simulated successful deployment for presentation."
+  },
+  {
+    "id": 15,
+    "version": "v1.15.0",
+    "commit_id": "succ0015",
+    "commit_timestamp": "2026-04-23T09:04:40+00:00",
+    "deployment_timestamp": "2026-04-23T15:04:40+00:00",
+    "status": "success",
+    "environment": "production",
+    "developer": "Release Bot",
+    "notes": "Simulated successful deployment for presentation."
+  },
+  {
+    "id": 16,
+    "version": "v1.16.0",
+    "commit_id": "sim0016",
+    "commit_timestamp": "2026-04-23T15:04:52+00:00",
+    "deployment_timestamp": "2026-04-23T15:04:52+00:00",
+    "status": "failed",
+    "environment": "production",
+    "developer": "Simulation Bot",
+    "notes": "Simulated failed deployment for presentation."
+  },
+  {
+    "id": 17,
+    "version": "v1.17.0",
+    "commit_id": "sim0017",
+    "commit_timestamp": "2026-04-23T15:05:12+00:00",
+    "deployment_timestamp": "2026-04-23T15:05:12+00:00",
+    "status": "failed",
+    "environment": "production",
+    "developer": "Simulation Bot",
+    "notes": "Simulated failed deployment for presentation."
+  },
+  {
+    "id": 18,
+    "version": "v1.18.0",
+    "commit_id": "sim0018",
+    "commit_timestamp": "2026-04-23T15:05:26+00:00",
+    "deployment_timestamp": "2026-04-23T15:05:26+00:00",
+    "status": "failed",
+    "environment": "production",
+    "developer": "Simulation Bot",
+    "notes": "Simulated failed deployment for presentation."
+  },
+  {
+    "id": 19,
+    "version": "v1.19.0",
+    "commit_id": "succ0019",
+    "commit_timestamp": "2026-04-23T09:05:28+00:00",
+    "deployment_timestamp": "2026-04-23T15:05:28+00:00",
+    "status": "success",
+    "environment": "production",
+    "developer": "Release Bot",
+    "notes": "Simulated successful deployment for presentation."
+  },
+  {
+    "id": 20,
+    "version": "v1.20.0",
+    "commit_id": "succ0020",
+    "commit_timestamp": "2026-04-23T09:05:29+00:00",
+    "deployment_timestamp": "2026-04-23T15:05:29+00:00",
+    "status": "success",
+    "environment": "production",
+    "developer": "Release Bot",
+    "notes": "Simulated successful deployment for presentation."
+  },
+  {
+    "id": 21,
+    "version": "v1.21.0",
+    "commit_id": "succ0021",
+    "commit_timestamp": "2026-04-23T09:05:29+00:00",
+    "deployment_timestamp": "2026-04-23T15:05:29+00:00",
+    "status": "success",
+    "environment": "production",
+    "developer": "Release Bot",
+    "notes": "Simulated successful deployment for presentation."
+  },
+  {
+    "id": 22,
+    "version": "v1.22.0",
+    "commit_id": "succ0022",
+    "commit_timestamp": "2026-04-23T09:05:30+00:00",
+    "deployment_timestamp": "2026-04-23T15:05:30+00:00",
+    "status": "success",
+    "environment": "production",
+    "developer": "Release Bot",
+    "notes": "Simulated successful deployment for presentation."
   }
 ]
